@@ -17,6 +17,3 @@ use App\Http\Controllers\UserController;
 Route::get('/', function () {
     return view('welcome');
 });
-
-Route::get('/api/v1/user/{id}',[UserController::class,'karmaPosition']);
-Route::get('/api/v1/user/{id}/{total}',[UserController::class,'karmaPositionBonus']);
